@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+   <children>
+      <TabPane fx:id="tabPane" prefHeight="405.0" prefWidth="500.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <tabs>
+            <Tab fx:id="Home" text="Home">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Text layoutX="128.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Convertisseur" textAlignment="CENTER" wrappingWidth="244.7626953125">
+                           <font>
+                              <Font name="AdobeDevanagari-Regular" size="32.0" />
+                           </font>
+                        </Text>
+                        <Button alignment="CENTER" contentDisplay="CENTER" layoutX="185.0" layoutY="226.0" mnemonicParsing="false" onAction="#temperatureTab" prefHeight="39.0" prefWidth="130.0" text="Temperature" />
+                        <Button alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="226.0" mnemonicParsing="false" onAction="#pressionTab" prefHeight="39.0" prefWidth="130.0" text="Pression" textAlignment="CENTER" />
+                        <Button alignment="CENTER" contentDisplay="CENTER" layoutX="356.0" layoutY="226.0" mnemonicParsing="false" onAction="#vitesseTab" prefHeight="39.0" prefWidth="130.0" text="Vitesse" textAlignment="CENTER" />
+                        <ImageView fitHeight="99.0" fitWidth="22.0" layoutX="-7.0" layoutY="196.0" opacity="0.2" pickOnBounds="true">
+                           <image>
+                              <Image url="@TH_24567080_24594080_24596080_24601080_24563080_24565080_24588080_001.jpg" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="btnimg" alignment="CENTER" contentDisplay="CENTER" layoutX="356.0" layoutY="302.0" mnemonicParsing="false" onAction="#quitter" prefHeight="39.0" prefWidth="130.0" text="Quitter" />
+                        <ImageView fitHeight="99.0" fitWidth="42.0" layoutX="144.0" layoutY="196.0" opacity="0.2" pickOnBounds="true">
+                           <image>
+                              <Image url="@TH_24567080_24594080_24596080_24601080_24563080_24565080_24588080_001.jpg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="99.0" fitWidth="41.0" layoutX="315.0" layoutY="196.0" opacity="0.2" pickOnBounds="true">
+                           <image>
+                              <Image url="@TH_24567080_24594080_24596080_24601080_24563080_24565080_24588080_001.jpg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="99.0" fitWidth="22.0" layoutX="486.0" layoutY="196.0" opacity="0.2" pickOnBounds="true">
+                           <image>
+                              <Image url="@TH_24567080_24594080_24596080_24601080_24563080_24565080_24588080_001.jpg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="32.0" fitWidth="129.0" layoutX="15.0" layoutY="196.0" opacity="0.2" pickOnBounds="true">
+                           <image>
+                              <Image url="@TH_24567080_24594080_24596080_24601080_24563080_24565080_24588080_001.jpg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="32.0" fitWidth="129.0" layoutX="15.0" layoutY="263.0" opacity="0.2" pickOnBounds="true">
+                           <image>
+                              <Image url="@TH_24567080_24594080_24596080_24601080_24563080_24565080_24588080_001.jpg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="32.0" fitWidth="129.0" layoutX="186.0" layoutY="263.0" opacity="0.2" pickOnBounds="true">
+                           <image>
+                              <Image url="@TH_24567080_24594080_24596080_24601080_24563080_24565080_24588080_001.jpg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="32.0" fitWidth="129.0" layoutX="186.0" layoutY="196.0" opacity="0.2" pickOnBounds="true">
+                           <image>
+                              <Image url="@TH_24567080_24594080_24596080_24601080_24563080_24565080_24588080_001.jpg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="32.0" fitWidth="130.0" layoutX="356.0" layoutY="196.0" opacity="0.2" pickOnBounds="true">
+                           <image>
+                              <Image url="@TH_24567080_24594080_24596080_24601080_24563080_24565080_24588080_001.jpg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="32.0" fitWidth="130.0" layoutX="356.0" layoutY="263.0" opacity="0.2" pickOnBounds="true">
+                           <image>
+                              <Image url="@TH_24567080_24594080_24596080_24601080_24563080_24565080_24588080_001.jpg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="130.0" fitWidth="304.0" layoutX="14.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@pressure.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="130.0" fitWidth="304.0" layoutX="186.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@temperature.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="155.0" fitWidth="158.0" layoutX="344.0" layoutY="73.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@vitesse.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+          <Tab fx:id="Pression" text="Pression">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="txt2" layoutX="288.0" layoutY="145.0" onKeyReleased="#Convertir2" onKeyTyped="#verifNum" prefHeight="39.0" prefWidth="150.0" text="1" />
+                        <ComboBox fx:id="cbo1" layoutX="63.0" layoutY="232.0" onAction="#Convertir1" prefWidth="150.0" promptText="Choisir" />
+                        <ComboBox fx:id="cbo2" layoutX="288.0" layoutY="232.0" onAction="#Convertir2" prefWidth="150.0" promptText="Choisir" />
+                        <TextField fx:id="txt1" layoutX="63.0" layoutY="145.0" onKeyReleased="#Convertir1" onKeyTyped="#verifNum" prefHeight="39.0" prefWidth="150.0" text="1" />
+                        <Text layoutX="128.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pression" textAlignment="CENTER" wrappingWidth="244.7626953125">
+                           <font>
+                              <Font name="AdobeDevanagari-Regular" size="32.0" />
+                           </font>
+                        </Text>
+                        <Button fx:id="btnimg1" alignment="CENTER" contentDisplay="CENTER" layoutX="366.0" layoutY="312.0" mnemonicParsing="false" onAction="#quitter" prefHeight="39.0" prefWidth="130.0" text="Quitter" />
+                        <Button fx:id="btnimg42" alignment="CENTER" contentDisplay="CENTER" layoutX="25.0" layoutY="312.0" mnemonicParsing="false" onAction="#homeTab" prefHeight="39.0" prefWidth="130.0" text="Home" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab fx:id="Temperature" text="Temperature">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="txt3" layoutX="288.0" layoutY="145.0" onKeyReleased="#Convertir4" onKeyTyped="#verifNum" prefHeight="39.0" prefWidth="150.0" text="1" />
+                        <ComboBox fx:id="cbo4" layoutX="288.0" layoutY="232.0" onAction="#Convertir4" prefWidth="150.0" promptText="Choisir" />
+                        <ComboBox fx:id="cbo3" layoutX="63.0" layoutY="232.0" onAction="#Convertir3" prefWidth="150.0" promptText="Choisir" />
+                        <TextField fx:id="txt4" layoutX="63.0" layoutY="145.0" onKeyReleased="#Convertir3" onKeyTyped="#verifNum" prefHeight="39.0" prefWidth="150.0" text="1" />
+                        <Text layoutX="128.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Temperature" textAlignment="CENTER" wrappingWidth="244.7626953125">
+                           <font>
+                              <Font name="AdobeDevanagari-Regular" size="32.0" />
+                           </font>
+                        </Text>
+                        <Button fx:id="btnimg2" alignment="CENTER" contentDisplay="CENTER" layoutX="366.0" layoutY="312.0" mnemonicParsing="false" onAction="#quitter" prefHeight="39.0" prefWidth="130.0" text="Quitter" />
+                        <Button fx:id="btnimg41" alignment="CENTER" contentDisplay="CENTER" layoutX="25.0" layoutY="312.0" mnemonicParsing="false" onAction="#homeTab" prefHeight="39.0" prefWidth="130.0" text="Home" />
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+            <Tab fx:id="Vitesse" text="Vitesse">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="txt5" layoutX="63.0" layoutY="145.0" onKeyReleased="#Convertir5" onKeyTyped="#verifNum" prefHeight="39.0" prefWidth="150.0" text="1" />
+                        <ComboBox fx:id="cbo6" layoutX="288.0" layoutY="232.0" onAction="#Convertir6" prefWidth="150.0" promptText="Choisir" />
+                        <ComboBox fx:id="cbo5" layoutX="63.0" layoutY="232.0" onAction="#Convertir5" prefWidth="150.0" promptText="Choisir" />
+                        <TextField fx:id="txt6" layoutX="288.0" layoutY="145.0" onKeyReleased="#Convertir6" onKeyTyped="#verifNum" prefHeight="39.0" prefWidth="150.0" text="1" />
+                        <Text layoutX="128.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vitesse" textAlignment="CENTER" wrappingWidth="244.7626953125">
+                           <font>
+                              <Font name="AdobeDevanagari-Regular" size="32.0" />
+                           </font>
+                        </Text>
+                        <Button fx:id="btnimg3" alignment="CENTER" contentDisplay="CENTER" layoutX="366.0" layoutY="312.0" mnemonicParsing="false" onAction="#quitter" prefHeight="39.0" prefWidth="130.0" text="Quitter" />
+                        <Button fx:id="btnimg4" alignment="CENTER" contentDisplay="CENTER" layoutX="25.0" layoutY="312.0" mnemonicParsing="false" onAction="#homeTab" prefHeight="39.0" prefWidth="130.0" text="Home" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
